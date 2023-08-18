@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs</title>
+    <link rel="stylesheet" href="w3css/4/w3.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <style>
+        img{
+            display: flexbox;
+            width: 180px;
+            height: 160px;
+    
+        }
+        
+        .w3-row-padding img{
+            margin-bottom: 12px;
+            display: flexbox;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-small" style="display:none;padding-top:60px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-medium w3-padding w3-display-topright" style="padding:9px 15px 4px">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="techsite.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+      <a href="techsite.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+      <a href="techsite.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Projects</a>
+      <a href="techsite.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+    </div>
+  </nav>
+    <!--content-->
+    <div class="w3-content" style="max-width: 1500px;">
+        <!--header-->
+        <div class="w3-opacity">
+        <span class="w3-button w3-medium w3-blue w3-right" onclick="w3_open()"><i class="fa fa-bars"></i>
+        </span>
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+            <h1><b>TECHNOLOGY DESIGNS</b></h1>
+            <p><b>A set of designs and machines.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-aqua" onclick="myFunction()">Tech Machines </button></p>
+</header>
+        </div>
+    </div>
+    <!--tech photos-->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+          <div class="w3-half w3-animate-top">
+          <img src="images/img3.jpg" >
+          <img src="images/img4.jpg" >
+          <img src="images/img5.jpg" ></div>
+          <div class="w3-half w3-animate-left">
+          <img src="images/img7.jpg"  >
+          <img src="images/img13.jpg">
+          <img src="images/img14.jpg"></div>
+          <div class="w3-half w3-animate-right">
+          <img src="images/pic.jpg" >
+          <img src="images/pic0.png" >
+          <img src="images/pic1.png" ></div>    
+          <div class="w3-half w3-animate-top">
+          <img src="images/pic2.png" >
+          <img src="images/pic3.png" >
+          <img src="images/pic4.png" ></div>
+          <div class="w3-half w3-animate-left">
+          <img src="images/pic5.png" >
+          <img src="images/pic6.png">
+          <img src="images/pic7.png" ></div>
+          <div class="w3-half w3-animate-right">
+          <img src="images/pic8.png" >
+          <img src="images/pic9.png" >
+          <img src="images/img9.jpg" ></div>
+     </div>
+     <div class="w3-card-4">
+        <!-- Newsletter -->
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-aqua w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get our best offers first!</h2>
+      <p>Subscribe to our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="email" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-blue w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+     </div>
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-large" style="margin-top:128px"> 
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="site.html" target="_blank" class="w3-hover-text-green">Blue Technology</a></p>
+  </footer>
+  
+  <script>
+    // Tech Machines
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+    }
+    // Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "70%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+    </script>
+    <script src="./fontawesome/js/all.min.js"></script>
+</body>
+</html>

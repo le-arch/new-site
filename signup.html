@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="w3css/4/w3.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        body, h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body, html{
+            height: 400px;
+        }
+        .backimg{
+            background-image: url('images/img11.jpg');
+            min-height: 350px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .form{
+            background-color: rgb(202, 229, 245);
+        }
+         input{
+            width: 30rem;
+            height: 4em;
+            padding: 1em;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px;
+            letter-spacing: 1px;
+        }
+        .password-field #toggler{
+            position: absolute;
+            
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        label{
+            font-style: oblique;
+            color: blue;
+            font-weight: bold;
+        }
+        .password-field{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="backimg w3-display-container w3-animate-opacity w3-text-amber">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">Future Technology</div>
+        <div class="w3-display-center">
+            <h1 class="w3-bold w3-center w3-animate-top"> COMING SOON</h1>
+            <p class="w3-italize w3-bold w3-center w3-large w3-text-orange">Don't miss. Sign up <i class="fa fa-sign-in"></i></p>
+            <hr class="w3-border-brown" style="margin: auto; width:80%;">
+            <p class="w3-xlarge w3-center">In Few Months to Come</p>
+        </div>
+    </div>
+    <div class="w3-right">
+        <a href="techsite.html" onclick="myFunction()">Back <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="form w3-center w3-padding">
+       <div class="w3-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form action="" method="post" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Name <i class="fa fa-user"></i></label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" name="name" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Email <i class="fa fa-envelope"></i></label>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Password <i class="fa fa-eye"></i></label>
+                                <div class="password-field col-md-8">
+                                    <input id="fakePassword" type="password" class="form-control" name="password" placeholder="Password..">
+                                </div>
+                            </div>
+                            <div class="w3-button w3-medium"><button type="submit" class="w3-blue">Sign Up</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+         
+       </div>
+    </div>
+    <div class="w3-blue w3-display-bottom-left w3-padding-large">
+        powered by <a href="#">Blue Technology</a>
+    </div>
+
+ 
+    <script src="./fontawesome/js/all.min.js"></script>
+
+</body>
+</html>
